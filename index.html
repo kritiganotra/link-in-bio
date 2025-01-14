@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     html {
     min-height: 100%;
@@ -10,12 +14,12 @@
       min-height: 100%;
       padding-top: 20px;
       padding-bottom: 20px;
-      background: rgb(41,40,45);
-      background: linear-gradient(180deg, rgba(41,40,45,1) 0%, rgba(11,21,74,1) 100%);
+      background: rgb(154,175,189);
+      background: linear-gradient(129deg, rgba(154,175,189,1) 0%, rgba(112,135,149,1) 100%);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: "Noto Sans";
     }  
     .main-container {
       max-width: 640px;
@@ -50,10 +54,51 @@
       width: 25px;
       height: 25px;
     }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .item {
+      background-color: #ffffff;
+      border-radius:10px;
+      width: 60vw;
+      max-width: 1200px;
+      height: 65px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      box-shadow: 4px 4px 10px 0px rgba(112,135,149,1)
+    }
+
+    .item a {
+      text-decoration: none;
+      color: #464646;
+      gap: 20px;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 150px;
+      max-height: 100px;
+      margin-left:10px;
+      margin-right: 10px;
+      margin: 0;
+      padding: 0;
+      object-fit: contain;
+    }
   </style>
   <body>
     
     <div class ="main-container">
+      
       <div class="image-row">
         <img src="Images/Ganotra, Kriti.JPG" alt="Kriti Ganotra Headshot" class="circular-image">
       </div>
@@ -66,19 +111,50 @@
         <a href="https://github.com/kritiganotra" target ="_blank">
           <img src="Images/github-icon-white.png" alt="GitHub">
         </a>
+        <a href="https://www.linkedin.com/in/kganotra/" target ="_blank">
+          <img src="Images/linkedin-icon-white.webp" alt="LinkedIn">
+        </a>
         <a href="https://www.instagram.com/kganotra/" target ="_blank">
           <img src="Images/instagram-icon-white.png" alt="Instagram">
         </a>
-        <a href="https://www.threads.net/@kganotra?xmt=AQGz_pFU6NNWziS7LaeBigO03BpON9ZQse4FheBW4ZdIQyM" target ="_blank">
-          <img src="Images/threads-icon-white.webp" alt="Threads">
-        </a>
-        <a href="https://www.linkedin.com/in/kganotra/" target ="_blank">
-          <img src="Images/linkedin-icon-white.webp" alt="LinkedIn">
+        <a href="https://beliapp.co/app/kriti" target ="_blank">
+          <img src="Images/beli-icon-white.webp" alt="Beli">
         </a>
       </div>
 
       <div class ="links">
+        <div class ="item">
+          <a href="https://www.chicagobooth.edu/" target="_blank">
+            <img src ="Images/booth logo.png" alt ="Chciago Booth">
+            Chicago Booth
+          </a>
+        </div>
 
+        <div class ="item">
+          <a href="https://open.spotify.com/show/7nc7OQdPTekErtFSRxOBKh" target="_blank">
+            <img src ="Images/morning-brew-logo.png" alt ="Morning Brew">
+            A podcast I listen to daily
+          </a>
+        </div>
+
+        <div class ="item">
+          <a href="https://open.spotify.com/playlist/37i9dQZF1FoBVd66XCVCxY?si=ekt2aMoZRueoUbiydW5pBg&pi=u-PWsiHuRXS2S5" target="_blank">
+            <img src ="Images/Spotify-Logo.png" alt ="Spotify 2024">
+            My top songs of 2024
+          </a>
+        </div>
+        
+        <div class ="item">
+          <a href="https://solidcore.co/" target="_blank">
+            <img src ="Images/solidcore_blue.png" alt ="SolidCore">
+            My favorite workout
+          </a>
+        </div>
+
+
+        
+        
       </div>
+
     </div>
   </body>
